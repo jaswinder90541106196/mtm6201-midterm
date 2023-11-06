@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone About Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Ysabeau SC", sans-serif;
+        font-size: larger;
+      }
+
+      header {
+        background-color: #600707;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      nav a {
+        color: #e3e3e3;
+        text-decoration: none;
+        padding-left: 10px;
+      }
+
+      .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgba(240, 151, 151, 0.9);
+      }
+
+      .team-heading {
+        font-size: 24px;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .team-member {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        background-color: rgba(195, 181, 181, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .team-image {
+        max-width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .team-name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .team-position {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      .team-description {
+        text-align: center;
+      }
+
+      /* Media Queries for Responsiveness */
+      @media screen and (max-width: 768px) {
+        .nav-links {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="ourteam.html">Our Team</a>
+          <a href="services.html">Services</a>
+          <a href="contactus.html">Contact Us</a>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Search..." />
+          <button id="search-btn">Search</button>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <h1 class="team-heading">iPhone About Us</h1>
+      <div class="team-member">
+        <img
+          class="team-image"
+          src="stevejobs.1419962539.jpg"
+          alt="Team Member 1"
+        />
+        <div class="team-name">Steve Jobs</div>
+        <div class="team-position">Co-Founder</div>
+        <div class="team-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dui
+          non nisl hendrerit malesuada.
+        </div>
+      </div>
+      <div class="team-member">
+        <img
+          class="team-image"
+          src="960x0.webp"
+          alt="Team Member 2"
+        />
+        <div class="team-name">Tim Cook</div>
+        <div class="team-position">CEO</div>
+        <div class="team-description">
+          Ut convallis urna ac libero dignissim, id consequat sem auctor. Proin
+          sit amet ligula vel tellus semper aliquam.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
