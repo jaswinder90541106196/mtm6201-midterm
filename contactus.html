@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samsung - Contact Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Ysabeau SC", sans-serif;
+        font-size: larger;
+      }
+
+      header {
+        background-color: #600707;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding-left: 10px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgba(237, 94, 54, 0.9);
+      }
+
+      .contact-form {
+        flex: 1;
+        padding: 20px;
+        background-color: rgba(255, 231, 166, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin: 10px; /* Adjust margin for responsiveness */
+      }
+
+      .map-address {
+        flex: 1;
+        padding: 20px;
+        background-color: rgba(255, 221, 166, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin: 10px; /* Adjust margin for responsiveness */
+      }
+
+      .hours-operation {
+        flex: 1;
+        padding: 20px;
+        background-color: rgba(255, 166, 251, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin: 10px; /* Adjust margin for responsiveness */
+      }
+
+      .form-input {
+        margin-bottom: 10px;
+      }
+
+      .form-input label {
+        display: block;
+        font-weight: bold;
+      }
+
+      .form-input input,
+      .form-input textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+
+      .form-input textarea {
+        resize: vertical;
+      }
+
+      .form-submit {
+        text-align: center;
+      }
+
+      .form-submit button {
+        background-color: #750606;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .copyright {
+        text-align: center;
+        margin: 20px 0; /* Add margin for responsiveness */
+      }
+
+      /* Media Queries for Responsiveness */
+      @media screen and (max-width: 768px) {
+        .nav-links {
+          gap: 10px;
+        }
+
+        nav a {
+          padding-left: 5px;
+        }
+
+        .contact-form,
+        .map-address,
+        .hours-operation {
+          flex: 1;
+          margin: 10px;
+        }
+
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="ourteam.html">Our Team</a>
+          <a href="services.html">Services</a>
+          <a href="contactus.html">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <div class="form-input">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required />
+        </div>
+        <div class="form-input">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-input">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit">Send</button>
+        </div>
+      </div>
+      <div class="map-address">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101548.8910589883!2d-122.19953961078537!3d37.30928426367695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb4571bd377ab%3A0x394d3fe1a3e178b4!2sCupertino%2C%20CA%2C%20USA!5e0!3m2!1sen!2sca!4v1699266802426!5m2!1sen!2sca"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="hours-operation">
+        <h2>Hours of Operation</h2>
+        Monday - Friday 9 AM - 6 PM Saturday - Sunday Closed
+        <div class="copyright">© Copyright Three Star Media, 2020</div>
+      </div>
+    </div>
+  </body>
+</html>
