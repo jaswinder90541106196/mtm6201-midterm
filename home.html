@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPhone Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://images.macrumors.com/article-new/2019/10/iphone12design.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: "Ysabeau SC", sans-serif;
+            font-size: larger;
+        }
+
+        header {
+            background-color: #600707;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 30px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding-left: 10px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        #search-input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(255, 223, 223, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        #image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        #heading1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #info {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        #contact-btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #about-us {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        #about-text {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        #about-image {
+            max-width: 100%;
+            height: auto;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .search-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #search-input {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="ourteam.html">Our Team</a>
+                <a href="services.html">Services</a>
+                <a href="contactus.html">Contact Us</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search..." />
+                <button id="search-btn">Search</button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 id="heading1">IPhone</h1>
+        <div id="info">
+            <p>IPhone provides the best performance ever.</p>
+            <button id="contact-btn">Contact Us</button>
+        </div>
+        <div id="about-us">
+            <div id="about-text">
+                <h2>About Us</h2>
+                <p>
+                    The IPhone is a line of flagship smartphones and tablet computers
+                    produced by Apple Inc. It serves as Apple's flagship smartphone
+                    lineup. The iPhone is a smartphone made by Apple that combines a
+                    computer, iPod, digital camera and cellular phone into one device
+                    with a touchscreen interface
+                </p>
+            </div>
+            <img id="about-image" src="iPhone-15-General-Feature-Black.jpg" alt="iPhone" />
+        </div>
+    </div>
+</body>
+
+</html>
