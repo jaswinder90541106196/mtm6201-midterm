@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Services</title> <!-- Change the title to "iPhone Services" -->
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: 'Ysabeau SC', sans-serif;
+            font-size: larger;
+        }
+
+        header {
+            background-color: #620505;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 30px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding-left: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(249, 182, 25, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-box {
+            flex: 1;
+            max-width: 300px;
+            padding: 20px;
+            background-color: #ffd79f;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .service-description {
+            margin-top: 10px;
+        }
+
+        .service-button {
+            background-color: #333;
+            color: #ffffff;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-box {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="ourteam.html">Our Team</a>
+                <a href="service.html">Services</a>
+                <a href="contactus.html">Contact Us</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-btn">Search</button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 id="heading1">iPhone Services</h1> 
+        <div class="services-container">
+            <div class="service-box">
+                <h2>Smartphone and Accessories</h2>
+                <img class="service-image" src="iPhone-15-General-Feature-Black.jpg" alt="Smartphone and Accessories">
+                <p class="service-description">iPhone offers a wide range of smartphones and accessories, including the
+                    latest iPhone models and compatible accessories.</p>
+                <button class="service-button">Learn More</button>
+            </div>
+            <div class="service-box">
+                <h2>Software and Services</h2>
+                <img class="service-image" src="software-header.jpg" alt="Software and Services">
+                <p class="service-description">iPhone provides a variety of software and services, including the iOS
+                    operating system, the App Store, and iCloud.</p>
+                <button class="service-button">Learn More</button>
+            </div>
+            <div class="service-box">
+                <h2>Support and Repair</h2>
+                <img class="service-image" src="download.jpg"Support and Repair">
+                <p class "service-description">iPhone offers support and repair services to ensure your device stays in
+                    optimal condition.</p>
+                <button class="service-button">Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
